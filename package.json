@@ -3,6 +3,7 @@
   "version": "2.1.2",
   "description": "Bitcoin BIP39: Mnemonic code for generating deterministic keys",
   "main": "index.js",
+  "browser": "index-browser.js",
   "scripts": {
     "test": "mocha --reporter list test/*.js",
     "compile": "browserify index.js -s bip39 > bip39.js"
@@ -24,6 +25,7 @@
     "create-hash": "^1.1.0",
     "pbkdf2": "^3.0.0",
     "randombytes": "^2.0.1",
+    "sjcl": "^1.0.3",
     "unorm": "^1.3.3"
   },
   "devDependencies": {
